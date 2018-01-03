@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style type="text/css">
+
+</style>
+</head>
+<body>
+<input type="text" id="input1"/>
+<input type="submit" value="传递" id="input2"/>
+<script>
+	var oInput1=document.getElementById("input1");
+	var oInput2=document.getElementById("input2");
+	var str="";	
+	oInput2.onclick=function(){
+		str=oInput1.value;
+		dd(str)
+	}
+	function dd(x){
+		var y="data1.html?"+x;
+		location.href=y;
+		return location.href;
+	}
+
+</script>
+</body>
+</html>
